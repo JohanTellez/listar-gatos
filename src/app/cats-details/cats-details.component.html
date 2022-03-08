@@ -1,0 +1,15 @@
+<div *ngFor="let cat of catDetail">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ cat.name }}</mat-card-title>
+      <mat-card-subtitle>{{ cat.temperament }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ cat.image.url }}" alt="Photo cat">
+    <mat-card-content>
+      <p>
+        {{ cat.description }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

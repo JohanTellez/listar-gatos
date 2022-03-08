@@ -1,0 +1,14 @@
+<div class="alingBox">
+  <mat-card class="example-card" routerLink="/cat-detail/{{ cat.id }}" *ngFor="let cat of cats">
+    <div class="infoCat">
+      <mat-card-title>{{ cat.name }}</mat-card-title>
+      <mat-card-subtitle>{{ cat.origin }}</mat-card-subtitle>
+    </div>
+    <img mat-card-image src="{{ cat.image.url }}" alt="Photo cat">
+    <div class="infoCat">
+      <mat-card-subtitle>{{ cat.temperament }}</mat-card-subtitle>
+    </div>
+  </mat-card>
+  </div>
+  <mat-paginator [length]="cats.length" [pageSize]="pageSize">
+</mat-paginator>

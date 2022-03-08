@@ -1,0 +1,28 @@
+.example-card {
+  max-width: 400px;
+  max-height: 320px;
+  background-color: #731130;
+  border-radius: 20px;
+}
+
+img{
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.alingBox{
+  /*display: flex;
+  align-items: flex-end;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 320px;
+  grid-gap: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.infoCat{
+  text-align: center;
+}
